@@ -4,8 +4,8 @@
       <img src="../assets/resume_logo.png" alt=""/>
     </div>
     <div class="action">
-      <button class="register">注册</button>
-      <button class="login">登陆</button>
+      <el-button  type="success" class="login">登陆</el-button>
+      <el-button  type="info" class="register">注册</el-button>
     </div>
   </section>
 </template>
@@ -14,7 +14,6 @@
 <style lang="scss">
   #topbar{
     min-height:100px;
-    border:1px solid blue;
     display:flex;
     justify-content:space-between;
     padding: 25px 50px 0 50px;
@@ -25,8 +24,21 @@
       }
     }
     .action{
-     
-      .register{}
+      padding:8px 16px;
+      .login{
+        background:#4E6E8C;
+        border:1px solid #4E6E8C;
+
+      }
+      .register{
+        background:none;
+        border:1px solid #4E6E8C;
+        color:#4E6E8C;
+        &:hover{
+          background:#4E6E8C;
+          color:white;
+         }
+      }
     }
 
   }

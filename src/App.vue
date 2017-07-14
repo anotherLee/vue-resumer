@@ -33,19 +33,30 @@
     flex-direction:column;
   }
   .topbar{
-    background:#eee;
+    position:relative; z-index: 1;
+    background:#fff;
+    box-shadow: 0 0 8px #4E6E8C;
   }
   main{
     background:#ddd;
-    box-shadow:0 0 5px #ccc;
     display:flex;
     flex-grow:1;
-      .editor{
-        flex:2;
-      }
+    padding:32px 32px;
+
       .preview{
+        background:#fff;
+        box-shadow:0 0 8px #4E6E8C;
+        border-radius:8px;
         flex:5;
-    }
+      }
+      .editor{
+        background:#fff;
+        flex:3;
+        margin-left:32px;
+        border-radius:8px;
+        box-shadow:0 0 8px #4E6E8C;
+      }
+
 
   }
 </style>
